@@ -89,7 +89,7 @@ jobs:
   install-update:
     name: Windows install.ps1 + hermes update E2E (${{ matrix.shard }})
     needs: plan
-    runs-on: blacksmith-8vcpu-windows-2025
+    runs-on: blacksmith-4vcpu-windows-2025
     # One journey file per job; the longest (test_crash_cells.py) ran ~13 min of its own work
     # inside the old single job's 40 minutes.
     timeout-minutes: 75
